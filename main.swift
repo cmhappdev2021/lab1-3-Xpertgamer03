@@ -11,13 +11,16 @@ let roomArea = area/2;
 let perimeter = 2*width + 2*height;
 
 // Print what you would expect the result of integer division of 10 divided by 3 to be. Create a constant, integerDivisionResult that is the result of 10 divided by 3, and print the value.
-print (3);
-
-let integerDivisionResult: Int = 10/3;
+let integerDivisionResult = 10/3;
 print (integerDivisionResult);
 // Now create two constants, double10 and double3, set to 10 and 3, and declare their types as Double values. Declare a final constant divisionResult equal to the result of double10 divided by double3. Print the value of divisionResult. How does this differ from the value when using integer division?
 let double3: Double = 3;
-let double10: Double= 10;
+let double10: Double = 10;
+let divisionResult = double10/double3;
+print (divisionResult);
+
+/* It differs from the previous value because the first value was dividing integers and the second value was dividing doubles making the quotients different values.
+*/
 
 /* Given the value pi (3.1415927), create a radius constant with a value of 5.0, then calculate the diameter and circumference of the circle using the following equations, and print the results:
 
@@ -26,13 +29,25 @@ diameter = 2 * radius
 circumference = 2 * pi * radius. */
 
 let pi = 3.1415927
-
-
+let radius = 5.0;
+let diameter = 2*radius;
+let circumference = 2*pi*radius;
+print (diameter, circumference)
 // Your fitness tracker keeps track of users' heart rate, but you might also want to display their average heart rate over the last hour. Create three constants, heartRate1, heartRate2, and heartRate3. Give each constant a different value between 60 and 100. Create a constant addedHR equal to the sum of all three heart rates. Now create a constant called averageHR that equals addedHR divided by 3 to get the average. Print the result.
-
-
+let heartRate1 = 80
+let heartRate2 = 70
+let heartRate3 = 60
+let addedHR = heartRate1 + heartRate2 + heartRate3
+let averageHR = addedHR/3
+print ("AverageHR:", averageHR)
 // Now create three more constants, heartRate1D, heartRate2D, and heartRate3D, equal to the same values as heartRate1, heartRate2, and heartRate3. These new constants should be of type Double. Create a constant addedHRD equal to the sum of all three heart rates. Create a constant called averageHRD that equals the addedHRD divided by 3 to get the average of your new heart rate constants. Print the result. Does this differ from your previous average? Why or why not?
+let heartRate1D: Double = 80
+let heartRate2D: Double = 70
+let heartRate3D: Double = 60
+let addedHRD: Double  = heartRate1D + heartRate2D + heartRate3D
+let averageHRD: Double = addedHRD/3
 
+/* The average is a double instead of just an integer */
 
 // Imagine that partway through the day a user has taken 3,467 steps out of the 10,000 step goal. Create constants steps and goal. Both will need to be of type Double so that you can perform accurate calculations. steps should be assigned the value 3,467, and goal should be assigned 10,000. Create a constant percentOfGoal that equals an expression that evaluates to the percent of the goal that has been achieved so far.
 
