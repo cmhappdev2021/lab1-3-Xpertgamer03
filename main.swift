@@ -16,7 +16,8 @@ print (3);
 let integerDivisionResult: Int = 10/3;
 print (integerDivisionResult);
 // Now create two constants, double10 and double3, set to 10 and 3, and declare their types as Double values. Declare a final constant divisionResult equal to the result of double10 divided by double3. Print the value of divisionResult. How does this differ from the value when using integer division?
-
+let double3: Double = 3;
+let double10: Double= 10;
 
 /* Given the value pi (3.1415927), create a radius constant with a value of 5.0, then calculate the diameter and circumference of the circle using the following equations, and print the results:
 
