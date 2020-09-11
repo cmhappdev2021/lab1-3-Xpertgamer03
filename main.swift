@@ -51,9 +51,14 @@ let averageHRD: Double = addedHRD/3
 
 // Imagine that partway through the day a user has taken 3,467 steps out of the 10,000 step goal. Create constants steps and goal. Both will need to be of type Double so that you can perform accurate calculations. steps should be assigned the value 3,467, and goal should be assigned 10,000. Create a constant percentOfGoal that equals an expression that evaluates to the percent of the goal that has been achieved so far.
 
-
+let goal: Double = 10_000;
+let steps: Double = 3_467;
+let percentOfGoal: 3_467/10_000;
 // Declare a variable whose value begins at 10. Using addition, update the value to 15 using the compound assignment operator. Using multiplication, update the value to 30 using compound assignment. Print out the variable's value after each assignment.
-
+var ten = 10;
+ten = ten + 5;
+ten = ten * 2;
+print (ten);
 
 /* Create a variable called piggyBank that begins at 0. You will use this to keep track of money you earn and spend. For each point below, use the right compound assignment operator to update the balance in your piggy bank.
 
